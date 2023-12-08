@@ -7,7 +7,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Read data file
-df = pd.read_csv('/Users/ghizlanerehioui/Desktop/DM Project/data_banknote_authentication.txt', sep=',', header=None,
+df = pd.read_csv('data_banknote_authentication.txt', sep=',', header=None,
                           names=['variance', # variance of Wavelet Transformed image (continuous)
                                  'skewness', # skewness of Wavelet Transformed image (continuous)
                                  'kurtosis', # kurtosis of Wavelet Transformed image (continuous)
