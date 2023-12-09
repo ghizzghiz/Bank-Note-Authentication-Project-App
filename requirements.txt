@@ -1,3 +1,4 @@
-pywt==1.1.1
+PyWavelets
 opencv-python==4.5.3.56
 streamlit==1.8.0
+pandas
