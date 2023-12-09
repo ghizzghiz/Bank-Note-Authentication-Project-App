@@ -1,5 +1,9 @@
 PyWavelets
 opencv-python
 streamlit
-pandas
 scipy
+matplotlib 
+seaborn
+sklearn 
+joblib
+pandas
