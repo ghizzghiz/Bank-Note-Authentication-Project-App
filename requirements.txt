@@ -1,4 +1,4 @@
 PyWavelets
-opencv-python==4.5.3.56
-streamlit==1.8.0
+opencv-python
+streamlit
 pandas
