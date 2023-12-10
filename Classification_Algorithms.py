@@ -276,6 +276,14 @@ tree.plot_tree(rf_model.estimators_[100],
 import pandas as pd
 from sklearn.svm import SVC
 
+#input_vals
+X = df.values[:,:4] # 4 variables: 'variance', 'skewness', 'kurtosis', and 'entropy'
+#output_vals
+Y = df.values[:,4] # the 'class' (integer - binary 0, 1)
+scaler = StandardScaler()
+scaler.fit(pd.DataFrame(X))
+X = pd.DataFrame(scaler.transform(X), columns = df.columns[0:4])
+
 X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size=0.3, random_state=123)
 
 # Create the SVM model
