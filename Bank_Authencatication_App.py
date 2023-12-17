@@ -36,6 +36,15 @@ if uploaded_file is not None:
     result = wavelet_trs(uploaded_file)
     st.write(result)
     
+    result = pd.DataFrame([result])
+    
     predictions = loaded_model.predict(result)
+    
     st.write('The prediction is that: ')
     st.write(predictions)
+
+    st.subheader('Result of Counterfeit Analysis')
+    if predictions==0:
+        st.write('The banknote you uploaded is **genuine!**')
+    else:
+        st.write('The banknote you uploaded is **fake!**')
