@@ -8,12 +8,13 @@ from sklearn.preprocessing import StandardScaler
 
 #from sklearn.externals 
 import joblib
+
 # Load the saved Logistic Regression model
-loaded_model = joblib.load('finalized_LogiReg.sav')
-
+#loaded_model = joblib.load('finalized_LogiReg.sav')
 # Load the saved Random Forest model
-loaded_model = joblib.load('finalized_rf.sav')
+#loaded_model = joblib.load('finalized_rf.sav')
 
+# SVM was found to have the highest accuracy
 # Load the saved SVM model
 loaded_model = joblib.load('finalized_svm.sav')
 
